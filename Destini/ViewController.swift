@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         restart()
         
-        restartButton.isHidden = true
+        
         
     }
 
@@ -97,10 +97,13 @@ class ViewController: UIViewController {
     }
     
     func restart(){
+        restartButton.isHidden = true
         storyIndex = 1
         storyTextView.text = story1
         topButton.setTitle(answer1a, for: .normal)
         bottomButton.setTitle(answer1b, for: .normal)
+        topButton.isHidden = false
+        bottomButton.isHidden = false
     }
     
 }
